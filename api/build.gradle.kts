@@ -1,5 +1,4 @@
 dependencies {
-    compileOnly(project(":mewcore"))
-    compileOnly(libs.helper)
+    // server
     compileOnly(libs.server.paper)
 }
