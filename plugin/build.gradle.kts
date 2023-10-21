@@ -18,7 +18,7 @@ dependencies {
     implementation(project(":mewnms:api"))
     // implementation(project(":mewnms:v1_19_r3", configuration = "reobf")) // Not used anymore
     implementation(project(":mewnms:v1_20_r1", configuration = "reobf"))
-    // implementation(project(":mewnms:v1_20_r2", configuration = "reobf"))
+    implementation(project(":mewnms:v1_20_r2", configuration = "reobf"))
 }
 
 paper {
