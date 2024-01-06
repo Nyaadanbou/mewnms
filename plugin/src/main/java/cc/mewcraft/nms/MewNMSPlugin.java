@@ -10,8 +10,7 @@ public class MewNMSPlugin extends ExtendedJavaPlugin {
             MewNMSProvider.register(nms);
         } else {
             MewNMSProvider.register(new EmptyNMS());
-            getLogger().severe("There is no implementation on this runtime Minecraft version. " +
-                               "An empty implementation is provided as fallback.");
+            getLogger().severe("There is no implementation on this runtime Minecraft version.");
         }
     }
 
@@ -20,10 +19,12 @@ public class MewNMSPlugin extends ExtendedJavaPlugin {
 
         //if (runtimeVersion.equals(MinecraftVersion.of(1, 19, 4)))
         //    return new V1_19_R3();
-        if (runtimeVersion.equals(MinecraftVersion.of(1, 20, 1)))
-            return new V1_20_R1();
+        //if (runtimeVersion.equals(MinecraftVersion.of(1, 20, 1)))
+        //    return new V1_20_R1();
+        //if (runtimeVersion.equals(MinecraftVersion.of(1, 20, 2)))
+        //    return new V1_20_R2();
         if (runtimeVersion.equals(MinecraftVersion.of(1, 20, 2)))
-            return new V1_20_R2();
+            return new V1_20_R3();
 
         return null;
     }
